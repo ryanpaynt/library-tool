@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/search-page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <!-- one big row to fit two cols -->
+    <div class="row">
+        <!-- left col for buttons and search bar -->
+        <div class="col col-3" id='leftCol'>
+            <h1>Library of Congress Search Engine</h1>
+            <input type="text" name="Topic" id="topicInp" placeholder="Insert Topic...">
+            <!-- label for topic search -->
+            <br>
+            <input type="text" name="Topic" id="topicInp2" placeholder="Insert Specific Topic...">
+            <!-- buttons to either go back or search -->
+            <br>
+            <button id="submit">Submit</button>
+            <br>
+            <button id="back"><--Back</button>
+        </div>
+
+        <!-- right col will show results  -->
+        <div class="col col-9" id='rightCol'>
+            <h1>Showing results for ______ ...</h1>
+            <ul class="list">
+                <div class="col col-12">
+                    <ul class="results">
+                        
+                    </ul>
+                </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
