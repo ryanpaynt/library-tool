@@ -10,10 +10,10 @@ var searchInput = function(event){
     console.log(item);
     var type = specifInput.value;
     console.log(type);
-    var api = 'https://www/loc.gov/' + type + '/?q=' + item + '&fo=json';
+    var api = 'https://www.loc.gov/' + type + '/?q=' + item + '&fo=json';
     console.log(api);
 
-    fetch(apiURL).then(function (response){
+    fetch(api).then(function (response){
         console.log(response.ok);
             if(response.ok){
                 return response.json();
@@ -24,6 +24,9 @@ var searchInput = function(event){
 
     .then(function (data) {
         console.log('data');
+    })
+    .catch(function (error){
+        console.log('Unable to connect to Library of Congress');
     })
 };
 
