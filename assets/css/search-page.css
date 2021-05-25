@@ -1,0 +1,16 @@
+.col{
+    border: solid 4px black;
+    padding: 16px;
+}
+
+#dropDown{
+    width: 175px;
+    height: 30px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#result{
+}
