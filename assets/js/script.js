@@ -1,14 +1,17 @@
 var topicInput = document.querySelector('#topicInp');
 var specifInput = document.querySelector('#topicInp2');
 var resultEl = document.querySelector('.results');
+var btn = document.querySelector('#submit');
 
 var searchInput = function(event){
     event.preventDefault();
 
-    var item = resultEl.value.trim();
+    var item = topicInput.value;
+    console.log(item);
     var type = specifInput.value;
-    var apiURL = 'http://www/loc.gov/' + type + '/?q=' + item + '&fo-json';
-    console.log(apiURL);
+    console.log(type);
+    var api = 'https://www/loc.gov/' + type + '/?q=' + item + '&fo=json';
+    console.log(api);
 
     fetch(apiURL).then(function (response){
         console.log(response.ok);
@@ -23,3 +26,5 @@ var searchInput = function(event){
         console.log('data');
     })
 };
+
+btn.addEventListener('submit', searchInput);
